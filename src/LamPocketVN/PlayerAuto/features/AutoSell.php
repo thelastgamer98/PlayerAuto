@@ -24,7 +24,7 @@ class AutoSell implements Listener
     public function onBreak(BlockBreakEvent $event)
     {
         $player = $event->getPlayer();
-        if ($this->plugin->isAutoFeed($player))
+        if ($this->plugin->isAutoSell($player))
         {
             foreach($event->getDrops() as $drop)
             {
